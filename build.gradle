@@ -11,6 +11,13 @@ repositories {
     mavenCentral()
 }
 
+run {
+	standardInput = System.in
+	standardOutput = System.out
+	/* Can pass all the properties: */
+	systemProperties System.getProperties()
+}
+
 dependencies {
     compile 'commons-codec:commons-codec:1.9'
 		compile group: 'commons-cli', name: 'commons-cli', version: '1.3.1'

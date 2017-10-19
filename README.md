@@ -4,7 +4,7 @@ To run trainer:
 
 clone repository
 1.  execute ./gradlew build
-2.  execute ./gradlew run
+2.  execute --console plain ./gradlew run
 
 Expects the bios files to be located in the same directory and have the '.rom' extension
 'RX-580-1750-2250.rom'

@@ -156,11 +156,14 @@ public class App {
         System.out.println();
         System.out.print(SELECT_FILE);
         int fileIdx = scanner.nextInt();
-        if (fileIdx > -1 && fileIdx < files.length) {
-            String workingFile = files[fileIdx].getAbsolutePath();
-            biosFile = loadFile(workingFile);
-            deleteModdedFile();
+        if (fileIdx < 0 || fileIdx >= files.length) {
+            System.out.println("Please select the index value next to the filename");
+            System.exit(1);
+            return;
         }
+        String workingFile = files[fileIdx].getAbsolutePath();
+        biosFile = loadFile(workingFile);
+        deleteModdedFile();
     }
 
     private static void deleteModdedFile() {
