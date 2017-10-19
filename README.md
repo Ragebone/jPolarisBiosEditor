@@ -13,3 +13,6 @@ Expects the bios files to be located in the same directory and have the '.rom' e
 * Allows for you to edit a strap manually
 
 Enjoy.
+
+
+(ONLY TESTED WITH RX 580 - USE AT YOUR OWN RISK)
