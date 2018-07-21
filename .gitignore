@@ -22,9 +22,9 @@ gradle-app.setting
 
 # IDEA
 # ----
-.idea
+**/.idea/workspace.xml
+**/.idea/tasks.xml
 .shelf
-/*.iml
 /*.ipr
 /*.iws
 /buildSrc/*.iml
